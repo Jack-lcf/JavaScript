@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>JavaScript page</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+</head>
+<body>
+	<form name="form">
+		<select name="sel">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select> <br> <input type="button" name="okButtom"
+			onclick="setText(form);" value="OK"> <br>
+		<textarea rows="1" cols="20" name="area"></textarea>
+	</form>
+	<hr>
+	<br>
+	<form name="culc">
+		<p>
+			<label>Enter start number: </label>
+			<input type="text" name="startNumber" size="5">
+		</p>
+		<p>
+            <label>Enter end number: </label>
+            <input type="text" name="endNumber" size="5">
+        </p>
+        <p>
+            <input type="button" name="sumButton" value="Calculate" onclick="calculate();">
+        </p>
+        <p>
+            <textarea rows="1" cols="15" name="resultArea"></textarea>
+        </p>
+	</form>
+	<hr>
+	<form name="date">        
+        <p>
+            <textarea rows="1" cols="30" name="datatArea"></textarea>
+            <input type="button" name="dateButton" value="Date" onclick="showDate();">
+        </p>
+    </form>
+    <hr>
+    <form name="findWord">
+        <p>
+            <label>The original text: </label><br>
+            <textarea rows="5" cols="50" name="textarea">Give me a reason to turn and run, give me a reason to burn this house down, give me a reason I wish you would I wish you would</textarea>
+        </p>
+        <p>
+            <label>Enter search word: </label>
+            <input type="text" name="searchWord" size="20">
+            <input type="button" value="Search" onclick="countWord();">            
+        </p>
+        <p>
+            <label>The target word was found in text: </label>
+            <textarea rows="1" cols="10" name="numOfWord"></textarea>      
+        </p>
+    </form>
+    <hr>
+    <form name="mail">
+        <p>
+            <input type="text" name="inputMail" size="30">
+            <input type="button" value="Check" onclick="isMail();">
+            <span id="result" style="display:none;"></span>            
+        </p>
+    </form>
+    <hr>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
